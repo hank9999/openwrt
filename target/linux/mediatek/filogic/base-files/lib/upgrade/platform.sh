@@ -78,7 +78,9 @@ platform_do_upgrade() {
 	tplink,tl-xdr6086|\
 	tplink,tl-xdr6088|\
 	tplink,tl-xtr8488|\
-	xiaomi,redmi-router-ax6000-ubootmod)
+	xiaomi,redmi-router-ax6000-ubootmod|\
+	xiaomi,mi-router-ax3000t-ubootmod|\
+	xiaomi,mi-router-wr30u-ubootmod)
 		fit_do_upgrade "$1"
 		;;
 	acer,predator-w6|\
@@ -116,9 +118,7 @@ platform_do_upgrade() {
 	jcg,q30-pro|\
 	mediatek,mt7981-rfb|\
 	netcore,n60|\
-	qihoo,360t7|\
-	xiaomi,mi-router-ax3000t-ubootmod|\
-	xiaomi,mi-router-wr30u-ubootmod)
+	qihoo,360t7)
 		CI_KERNPART="fit"
 		nand_do_upgrade "$1"
 		;;
